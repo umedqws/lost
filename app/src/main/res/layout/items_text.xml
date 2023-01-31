@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/imageLost"
+        app:cardCornerRadius="20dp"
+        >
+
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/image"
+            android:src="@drawable/galery"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/name"
+    android:textSize="26sp"
+    android:textColor="@color/black"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="40dp"
+    app:layout_constraintStart_toEndOf="@id/imageLost"
+    app:layout_constraintTop_toTopOf="parent"
+    android:text="asdasdasd"/>
+
+    <TextView
+        android:layout_marginEnd="4dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/imageLost"
+        app:layout_constraintTop_toBottomOf="@id/name"
+        android:layout_marginStart="140dp"
+        android:id="@+id/description"
+        android:textSize="12sp"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"
+        android:text="Пепперони из ципленка, /n asdfasdfasdfsadfdsnfbgdsfbgm,dbngf,fdbglkjnfdkljbnklfjdbnklfdnbkljfdngblkjndfkllkdnfgbkjndflkjgnblkdjfgnblkjfdngblkjndflkgbnlkgjnblkjdngflbknjdfbgkjngfjnblknfkjbnlkdgbnlkdfgnblkjdfgnblkdjgfnjdnfbgkljndlfkbnlkdfjgnbjdfngbkjndfkbgjlndklfjbnkldfbnlkjfdbljdgfnbkjdfnbgkljdnfglndkfljbnlkdjfgnbldjfngbkldfngklbjdfnklgbnтоматный соус, моцареллы..."
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/imageLost"
+        app:layout_constraintTop_toBottomOf="@id/description"
+        android:layout_marginStart="40dp"
+        android:text="987654321"
+        android:textSize="16sp"
+        android:id="@+id/telefonAdd"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
